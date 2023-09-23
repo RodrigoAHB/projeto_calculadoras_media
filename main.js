@@ -49,7 +49,7 @@ function updateTable(){
 
 function updateFinalAverage(){
     const finalAverage = calculateFinalAverage();
-    document.querySelector('#finalAverage').innerHTML = finalAverage;
+    document.querySelector('#finalAverage').innerHTML = finalAverage.toFixed(2);
     document.querySelector('#finalGrade').innerHTML = finalAverage >= minimalGrade ? spanApproved : spanFailed;
 }
 
